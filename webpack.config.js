@@ -59,12 +59,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif|svg)$/img,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
+              outputPath: 'images/'
             },
           },
         ],
