@@ -3,6 +3,7 @@ import './plugins';
 import locations from './store/locations';
 import formUi from './views/form';
 import currencyUi from './views/currency';
+import ticketsUi from './views/tickets';
 
 document.addEventListener('DOMContentLoaded', () => { 
   initApp();
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const currency = currencyUi.currencyValue;
     //* CODE, CODE, 2020-09, 2020-10 
-    console.log(origin, destination, depart_date, return_date);
+    console.log(locations);
     await locations.fetchTickets({
       origin,
       destination,
