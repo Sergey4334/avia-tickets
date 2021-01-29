@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const currency = currencyUi.currencyValue;
     //* CODE, CODE, 2020-09, 2020-10 
-    console.log(locations);
+    
     await locations.fetchTickets({
       origin,
       destination,
@@ -36,5 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return_date,
       currency,
     });
+    //console.log(locations);
+    ticketsUi.renderTickets(locations.lastSearch);
   }
 });
