@@ -1,8 +1,9 @@
 # Ignore folder
 .vscode/
-.git/
-.ide/
+/.git
+/.ide
 node_modules/
+coverage
 # Files ignore
 package-lock.json
 
